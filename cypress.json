@@ -1,0 +1,7 @@
+{
+  "testFiles": "**/*.{feature,features}",
+  "env": {
+    "url": "http://shop.demoqa.com/my-account/"
+  },
+  "projectId": "ewmtug"
+}

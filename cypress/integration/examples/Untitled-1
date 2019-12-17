@@ -1,0 +1,18 @@
+it('changes the URL when "awesome" is clicked', function() {
+  // THIS IS NOT VALID CODE.
+  // THIS IS JUST FOR DEMONSTRATION.
+  cy.visit("https://www.toolsqa.com/");
+  .then(() => {
+    return cy.get('.navigation > .mini-widgets > .mini-search > .searchform > .submit > .mw-icon')
+  })
+  .then(($element) => {
+    // not analogous
+    return cy.click($element)
+  })
+  .then(() => {
+    return cy.url()
+  })
+  .then((url) => {
+    expect(url).to.eq('https://www.toolsqa.com/')
+  })
+})
